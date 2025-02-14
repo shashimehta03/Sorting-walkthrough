@@ -4,7 +4,6 @@ import BubbleSort from "./BubbleSort";
 import InsertionSort from "./InsertionSort";
 import SelectionSort from "./SelectionSort"; 
 import MergeSort from "./MergeSort";
-import MergeSortVisualizer from "./mergesorttwo";
 
 export default function SortingPage(props) {
   const [array, setArray] = useState([]);
@@ -44,9 +43,6 @@ export default function SortingPage(props) {
       buttonELe.innerHTML = "Selection Sort";
     } else if(props.page === "merge-sort"){
       buttonELe.innerHTML = "Merge Sort";
-    }
-    else if(props.page === "mergesorttwoarray"){
-      buttonELe.innerHTML = "Merge Sort of Two Array";
     }
     handlestopSorting();
     resetArray();
@@ -380,8 +376,6 @@ export default function SortingPage(props) {
       selectionSort();
     } else if(props.page === "merge-sort") {
       mergeSort();
-    }else if(props.page === "merge-sorttwoarray"){
-      MergeSortVisualizer();
     }
   };
 
@@ -437,7 +431,6 @@ export default function SortingPage(props) {
         {props.page === "selection-sort" ? <SelectionSort /> : null}
         {props.page === "insertion-sort" ? <InsertionSort /> : null}
         {props.page === "merge-sort" ? <MergeSort /> : null}
-        {props.page==="merge-sorttwoarray" ? <MergeSortVisualizer/> :null }
       </div>
     </div>
   );
