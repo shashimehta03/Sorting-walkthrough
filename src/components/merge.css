@@ -1,0 +1,111 @@
+.merge-sort-container {
+    @apply flex flex-col items-center w-full max-w-6xl mx-auto p-6 space-y-8 bg-white rounded-xl shadow-lg;
+  }
+  
+  .controls-container {
+    @apply w-full space-y-6 bg-gray-50 p-4 rounded-lg;
+  }
+  
+  .control-group {
+    @apply flex items-center space-x-4;
+  }
+  
+  .control-group label {
+    @apply w-24 font-medium text-gray-700;
+  }
+  
+  .control-group input[type="range"] {
+    @apply flex-1 h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer;
+  }
+  
+  .control-group input[type="range"]:disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+  
+  .control-group span {
+    @apply w-12 text-right font-mono text-gray-600;
+  }
+  
+  .arrays-container {
+    @apply w-full grid grid-cols-1 md:grid-cols-2 gap-6;
+  }
+  
+  .array-section {
+    @apply space-y-3;
+  }
+  
+  .array-section h3 {
+    @apply text-center font-semibold text-gray-800;
+  }
+  
+  .visualization-container {
+    @apply flex items-end justify-center space-x-1 h-64 border border-gray-200 rounded-lg p-4 bg-white shadow-inner;
+  }
+  
+  .bar {
+    @apply transition-all duration-200 ease-in-out rounded-t-sm;
+  }
+  
+  .merged-section {
+    @apply w-full space-y-3;
+  }
+  
+  .merged-section h3 {
+    @apply text-center font-semibold text-gray-800;
+  }
+  
+  .button-container {
+    @apply flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4;
+  }
+  
+  .button-container button {
+    @apply px-6 py-2 rounded-lg font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  
+  .button-container button:disabled {
+    @apply opacity-50 cursor-not-allowed;
+  }
+  
+  .generate-btn {
+    @apply bg-blue-500 text-white hover:bg-blue-600 focus:ring-blue-500;
+  }
+  
+  .merge-btn {
+    @apply bg-green-500 text-white hover:bg-green-600 focus:ring-green-500;
+  }
+  
+  .legend {
+    @apply text-sm text-gray-600 bg-gray-50 p-4 rounded-lg w-full max-w-md;
+  }
+  
+  .legend p {
+    @apply font-medium mb-2;
+  }
+  
+  .legend ul {
+    @apply space-y-2;
+  }
+  
+  .legend li {
+    @apply flex items-center space-x-2;
+  }
+  
+  .legend-color {
+    @apply w-4 h-4 rounded;
+  }
+  
+  .legend-color.comparing {
+    @apply bg-red-500;
+  }
+  
+  .legend-color.left {
+    @apply bg-orange-500;
+  }
+  
+  .legend-color.right {
+    @apply bg-purple-500;
+  }
+  
+  .legend-color.merged {
+    @apply bg-green-500;
+  }
